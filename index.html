@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Клікер</h1>
+</header>
+
+<main>
+    <section id="intro">
+        <p>Привіт! Ця гра має простий сюжет: натискайте на кнопку, щоб заробляти очки. У вас є 10 секунд, щоб зробити якомога більше кліків. Проте перед ігрою ви можете ввести своє ім'я та додати свій результат до таблиці лідерів.</p>
+        <button id="start-btn">Почати гру</button>
+    </section>
+
+    <section id="game">
+        <div id="timer"></div>
+        <button id="click-btn">Клікніть тут!</button>
+        <div id="click-count"></div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Будь ласка, введіть своє ім'я:</p>
+                <input type="text" id="name-input" placeholder="Ім'я">
+                <h3>Таблиця лідерів:</h3>
+                <ul id="leaderboard"></ul>
+                <button id="reset-btn">Почати заново</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="basis.js"></script>
+</body>
+</html>
