@@ -20,15 +20,16 @@
     </section>
 
     <section id="game">
-        <div id="timer"></div>
         <button id="click-btn">Клікніть тут!</button>
+        <button id="click-btn_clicker">включити час</button>
+        <div id="timer"></div>
         <div id="click-count"></div>
 
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Будь ласка, введіть своє ім'я:</p>
-                <input type="text" id="name-input" placeholder="Ім'я">
+                <input type="text" id="name-input" placeholder="Ім'я" maxlength="15" class="input">
                 <h3>Таблиця лідерів:</h3>
                 <ul id="leaderboard"></ul>
                 <button id="reset-btn">Почати заново</button>
